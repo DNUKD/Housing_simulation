@@ -85,16 +85,16 @@ A célom egy olyan szimulációs rendszer létrehozása volt, amely több szempo
 
 A projekt két komponensből áll, külön indítható backendből és front-endből, amelyeknek egyszerre kell futniuk.
 #### Backend indítása:
-```json
+```bash
 uvicorn app.main:app --reload
 ```
 
 #### Frontend indítása:
-```json
+```bash
 streamlit run main_app.py
 ```
 #### Tesztek futtatása::
-```json
+```bash
 pytest
 ```
 ---
@@ -191,12 +191,3 @@ Cost_of_living_dashboard/
 ├── main_app.py                
 ├── README.md
 └── requirements.txt                    
-
-
-
-
-
-
-
-
-
