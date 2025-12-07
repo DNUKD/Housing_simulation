@@ -1,13 +1,17 @@
+import sys
+import os
+
+# Fix module paths for Streamlit Cloud
+ROOT = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(ROOT)
+sys.path.append(os.path.join(ROOT, "app"))
+sys.path.append(os.path.join(ROOT, "database"))
+
 import streamlit as st
 from resources.style import tooltip_css
 from routes.api import (fetch_regions, run_simulation, fetch_animated_values)
 from sections.sections import (render_housing_affordability, render_income, render_rent, render_floor_area,render_household_chart, render_market_price)
 from streamlit_autorefresh import st_autorefresh
-import sys
-import os
-
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "."))
-sys.path.append(ROOT)
 
 ROLE_OPTIONS = {
     "Employed Adult": "adult_worker",
