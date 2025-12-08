@@ -1,3 +1,8 @@
+import sys
+import os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(ROOT)
+
 from fastapi import FastAPI
 from database.init_db import init_db
 from routes.simulation_controller import router as simulation_router
