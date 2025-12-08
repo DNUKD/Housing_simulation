@@ -10,7 +10,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
 def load_csv(filename: str):
-    with open(DATA_DIR + filename, encoding="utf-8") as f:
+    path = os.path.join(DATA_DIR, filename)
+    with open(path, encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
