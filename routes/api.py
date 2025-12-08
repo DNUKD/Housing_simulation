@@ -1,7 +1,7 @@
 import requests
 
 # Base URL of the backend API
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://housing-simulation.onrender.com"
 
 
 def fetch_regions(country_id: int):
