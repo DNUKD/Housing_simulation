@@ -11,35 +11,27 @@ A célom egy olyan szimulációs rendszer létrehozása volt, amely több szempo
 ## Bevezetés:
 
 🧑‍💻 **A felhasználó:**
-- 🏠 szabadon összeállíthatja a saját háztartását szerepkörökből (`kereső`, `nem kereső`, `nyugdíjas`, `gyermek`),
-
-- 🌍 kiválaszthatja az országot és régiót, amelyekhez a rendszer bér- és lakhatási adatokkal számol,
-
-- 📊 megtekintheti, hogyan alakulnak a háztartás kiadásai a jövedelmek, a családösszetétel és az életkörülmények szerint.
+* 🏠 szabadon összeállíthatja a saját háztartását szerepkörökből (`kereső`, `nem kereső`, `nyugdíjas`, `gyermek`),
+* 🌍 kiválaszthatja az országot és régiót, amelyekhez a rendszer bér- és lakhatási adatokkal számol,
+* 📊 megtekintheti, hogyan alakulnak a háztartás kiadásai a jövedelmek, a családösszetétel és az életkörülmények szerint.
 
 **A rendszer automatikusan generál jövedelmet a szerepkörök alapján:**
 
-- 🏦 az adott ország medián béréből indul ki, majd ehhez életszerű, véletlenszerű eltéréseket ad.
+* 🏦 az adott ország medián béréből indul ki, majd ehhez életszerű, véletlenszerű eltéréseket ad.
 
 **A lakhatási becslések az alábbiakat veszik figyelembe:**
 
-- 🛋️ mekkora lakóterület lenne ideális és egészséges az adott háztartásnak,
-
-- 🧾 mennyit engedhetnek meg maguknak a jövedelmük alapján,
-
-- 🫰 mennyi az adott régió várható albérleti díja,
-
-- 💼 hogyan oszlik meg a bérleti díj terhe a családtagok között.
+* 🛋️ mekkora lakóterület lenne ideális és egészséges az adott háztartásnak,
+* 🧾 mennyit engedhetnek meg maguknak a jövedelmük alapján,
+* 🫰 mennyi az adott régió várható albérleti díja,
+* 💼 hogyan oszlik meg a bérleti díj terhe a családtagok között.
 
 **A szimuláció célja, hogy megmutassa:**
 
-- 👨‍👩‍👧‍👦 hogyan épülhet fel egy család kiadási szerkezete,
-
-- 💰 mennyi marad a jövedelmükből a kötelező kiadások után,
-
-- 🏚️ mikor válik a lakhatás megfizethetetlenné,
-
-- 🌁 és hogyan változik mindez országonként és régiónként.
+* 👨‍👩‍👧‍👦 hogyan épülhet fel egy család kiadási szerkezete,
+* 💰 mennyi marad a jövedelmükből a kötelező kiadások után,
+* 🏚️ mikor válik a lakhatás megfizethetetlenné,
+* 🌁 és hogyan változik mindez országonként és régiónként.
 
 
 ---
@@ -48,34 +40,26 @@ A célom egy olyan szimulációs rendszer létrehozása volt, amely több szempo
 🔧 **FastAPI alapú backend:**
 
 - jövedelem- és megélhetési költség modellek
-
 - minimális és egészséges lakóterület meghatározása
-
 - régió-alapú albérleti ár számítása
-
 - zsúfoltsági mutató *(crowding index)*
 
 
 🎨 **Streamlit alapú frontend:**
 
 - interaktív, valós időben frissülő felület
-
 - animált értékváltozások
-
 - Plotly alapú oszlopdiagram
 
 💾 **Adatkezelés**
 
 - SQLAlchemy ORM
-
 - SQLite / PostgreSQL database support
 
 🧪 **Egységtesztek:**
 
 - pytest tesztkészlet
-
 - paraméterezett tesztek
-
 - szolgáltatáslogika ellenőrzése
 
 
