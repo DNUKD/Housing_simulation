@@ -1,11 +1,13 @@
 import csv
+import os
+import csv
 from database.db import SessionLocal
 from app.models.country import Country
 from app.models.region import Region
 from app.models.wage_stats import WageStats
 
-DATA_DIR = "data/"
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
 def load_csv(filename: str):
     with open(DATA_DIR + filename, encoding="utf-8") as f:
