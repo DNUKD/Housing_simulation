@@ -9,7 +9,6 @@ def ui_title(text):
 # Tooltip and status block
 def ui_metric(label, value, tooltip=None, color="#fff", warning=None, warning_color=None):
 
-    # Tooltip biztonságos, nem törik meg HTML-t
     if tooltip:
         safe_tooltip = escape(tooltip).replace("\n", "&#10;")
         tip = (

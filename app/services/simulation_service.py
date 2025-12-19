@@ -41,7 +41,7 @@ def run_simulation_logic(country_id: int, region_id: int, family_roles: list, db
     if active_adults == 0:
         raise HTTPException(
             status_code=400,
-            detail="Legalább 1 keresőképes felnőttnek lennie kell a családban."
+            detail="The household must include at least one income-earning adult."
         )
 
     family_size = len(family_roles)

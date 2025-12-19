@@ -1,9 +1,11 @@
 import requests
+import os
 
 # Base URL of the backend API
-BASE_URL = "https://housing-simulation.onrender.com"
+BASE_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 
 
+# GET
 def fetch_regions(country_id: int):
     """Fetch region list for a given country"""
     try:
@@ -11,7 +13,7 @@ def fetch_regions(country_id: int):
     except Exception:
         return []
 
-
+# Order
 def run_simulation(payload: dict):
     """Submit input and return the response"""
     try:
@@ -19,7 +21,7 @@ def run_simulation(payload: dict):
     except Exception:
         return None
 
-
+# Thread
 def fetch_animated_values():
     """Fetch animated UI values """
     try:
