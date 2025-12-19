@@ -22,7 +22,7 @@ ROLE_OPTIONS = {
 
 # Page setup
 st.set_page_config(page_title="Housing Simulation", page_icon="🏙️", layout="wide")
-#st_autorefresh(interval=200, key="anim-refresh")
+st_autorefresh(interval=5000, key="anim-refresh")
 st.markdown(tooltip_css(), unsafe_allow_html=True)
 
 # Sidebar Inputs
@@ -40,9 +40,6 @@ region_type_value = region_types[region_type]
 
 # Load region
 region_lookup = fetch_regions(country_id)
-
-st.write("DEBUG regions:", region_lookup)
-st.write("DEBUG selected:", region_type_value)
 
 region_id = None
 for r in region_lookup:
