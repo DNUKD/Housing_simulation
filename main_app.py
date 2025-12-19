@@ -22,7 +22,7 @@ ROLE_OPTIONS = {
 
 # Page setup
 st.set_page_config(page_title="Housing Simulation", page_icon="🏙️", layout="wide")
-st_autorefresh(interval=5000, key="anim-refresh")
+st_autorefresh(interval=500, key="anim-refresh")
 st.markdown(tooltip_css(), unsafe_allow_html=True)
 
 # Sidebar Inputs
