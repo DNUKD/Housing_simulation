@@ -2,6 +2,9 @@
 
 ---
 
+🌐 **Online elérhető verzió:**  
+👉 https://housing-simulation.streamlit.app/
+
 ## Projekt célja: 
 
 A célom egy olyan szimulációs rendszer létrehozása volt, amely több szempontból képes becslést adni egy háztartás megélhetési költségeire, felhasználó által megadott élethelyzet alapján.
