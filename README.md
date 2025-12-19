@@ -2,10 +2,7 @@
 
 ---
 
-🌐 <b>Online elérhető verzió:</b><br>
-<a href="https://housing-simulation.streamlit.app/" target="_blank">
-👉 https://housing-simulation.streamlit.app/
-</a>
+<img width="1915" height="1049" alt="image" src="https://github.com/user-attachments/assets/677dc70f-5862-495e-a77b-8c023c2b01f2" />
 
 ## Projekt célja: 
 
