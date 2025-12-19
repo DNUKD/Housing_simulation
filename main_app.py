@@ -41,9 +41,6 @@ region_type_value = region_types[region_type]
 # Load region
 region_lookup = fetch_regions(country_id)
 
-st.write("DEBUG regions:", region_lookup)
-st.write("DEBUG selected:", region_type_value)
-
 region_id = None
 for r in region_lookup:
     if r["type"].strip().lower() == region_type_value.strip().lower():
