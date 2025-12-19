@@ -2,8 +2,10 @@
 
 ---
 
-🌐 **Online elérhető verzió:**  
+🌐 <b>Online elérhető verzió:</b><br>
+<a href="https://housing-simulation.streamlit.app/" target="_blank">
 👉 https://housing-simulation.streamlit.app/
+</a>
 
 ## Projekt célja: 
 
