@@ -128,6 +128,7 @@ Cost_of_living_dashboard/
 │   │   ├── region.py    
 │   │   ├── simultaion.py      
 │   │   └── wage_stats.py   
+│   │ 
 │   ├── services/     
 │   │   ├── animation_service.py         
 │   │   ├── area_service.py  
