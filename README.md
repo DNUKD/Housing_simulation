@@ -9,7 +9,7 @@
 
 A célom egy olyan szimulációs rendszer létrehozása volt, amely több szempontból képes becslést adni egy háztartás megélhetési költségeire, felhasználó által megadott élethelyzet alapján.
 
----
+
 ## Bevezetés:
 
 🧑‍💻 **A felhasználó:**
